@@ -1,3 +1,3 @@
 # Jawaban No. 1
 
-Inheritance adalah pewarisan method dan property yang dimiliki sebuah class pada class turunannya
+Inheritance adalah pewarisan properties dan methods dari sebuah class induk kepada class yang menjadi turunannya. Dalam beberapa bahasa pemrograman, keyword yang digunakan untuk mewarisi class adalah 'extends'

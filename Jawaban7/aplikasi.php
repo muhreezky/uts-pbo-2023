@@ -3,7 +3,7 @@
 include __DIR__ . "/../Jawaban6/koneksi.php";
 
 $createTable = "
-  CREATE TABLE `users` (
+  CREATE TABLE IF NOT EXISTS `users` (
     `id` INT(9) AUTO_INCREMENT PRIMARY KEY,
     `nama` VARCHAR(150) NOT NULL,
     `email` VARCHAR(150) NOT NULL,

@@ -6,18 +6,18 @@ interface Kendaraan {
 
 class Mobil implements Kendaraan {
   public function klakson() {
-    echo "Bim!!!\n";
+    echo "Tin!!!\n";
   }
 }
 
 class Motor implements Kendaraan {
   public function klakson() {
-    echo "Tin!!!\n";
+    echo "Bim!!!\n";
   }
 }
 
 $motor = new Motor();
 $mobil = new Mobil();
 
-$mobil->klakson(); // Bim!!!
-$motor->klakson(); // Tin!!!
+$mobil->klakson(); // Tin!!!
+$motor->klakson(); // Bim!!!

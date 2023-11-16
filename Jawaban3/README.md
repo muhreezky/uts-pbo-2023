@@ -1,3 +1,3 @@
 # Jawaban No. 3
 
-Di dalam OOP, Polymorphism artinya adalah satu interface atau antarmuka yang bisa dipakai oleh banyak class yang berbeda dengan sifat dan bentuk yang berbeda
+Polymorphism adalah konsep di mana satu interface atau antarmuka dapat diimplementasikan oleh banyak class yang berbeda-beda. Dalam bahasa PHP, terdapat keyword 'interface' untuk membuat interface baru, dan menggunakan keyword 'implements' untuk mengimplementasi interface

@@ -1,40 +1,27 @@
 <?php
-  class Buku {
-    /**
-     * Dalam class, kita dapat mengatur akses terhadap data dan method
-     * Inilah yang disebut sebagai encapsulation
-     * Di dalam class, property dan method yang dapat diakses adalah yang bersifat public
-     * Property dan method yang bersifat private, tidak bisa diakses langsung dari luar class
-     */
-    private $isbn;
-    private $judul;
-    private $harga;
+  class Orang {
+    private $nama;
+    private $gender;
 
-    public function __construct($judul, $harga, $isbn)
+    public function __construct($nama, $gender)
     {
-      $this->judul = $judul;
-      $this->harga = $harga;
-      $this->isbn = $isbn;
+      $this->nama = $nama;
+      $this->gender = $gender;
     }
 
-    public function getBookData() {
+    public function getData() {
       return [
-        'Judul' => $this->judul,
-        'Harga' => $this->harga,
-        'ISBN' => $this->isbn
+        'nama' => $this->nama,
+        'kelamin' => $this->gender
       ];
-    }
-
-    public function getHarga() {
-      return 'Harga = ' . $this->harga;
     }
   }
 
-  $buku = new Buku('Laskar Pelangi', '35000', '123958276301');
+  $orang = new Orang('Rizki', 'L');
+  
+  // Kode ini berjalan dengan baik
+  echo json_encode($orang->getData());
 
-  // Code ini berjalan dengan baik karena memanggil method public
-  echo $buku->getHarga();
-
-  // Ini akan menghasilkan error karena mencoba akses properti private
-  echo $buku->harga; 
+  // Kode ini akan error karena mencoba akses private property
+  echo $orang->nama;
 ?>
